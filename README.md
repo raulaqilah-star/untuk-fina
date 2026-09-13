@@ -1,1 +1,239 @@
-# untuk-fina
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semangat TKA!</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #dbeafe, #f8fafc);
+      color: #1e293b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 15px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      background: rgba(255,255,255,0.9);
+      padding: 40px 30px;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      background: #2563eb;
+      color: white;
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    #pesan {
+      display: none;
+      margin-top: 30px;
+      padding: 25px;
+      background: #f1f5f9;
+      border-radius: 18px;
+      text-align: left;
+      line-height: 1.8;
+      animation: muncul 0.5s ease;
+    }
+
+    #pesan h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    #pesan p {
+      margin-bottom: 12px;
+    }
+
+    .quote {
+      margin-top: 20px;
+      padding: 15px;
+      border-left: 4px solid #2563eb;
+      background: white;
+      border-radius: 8px;
+      font-style: italic;
+      color: #475569;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    @keyframes muncul {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="emoji">📚</div>
+
+    <h1>Semangat TKA nyaaa!</h1>
+
+    <p class="subtitle">
+      kata-kata buat FINA yang lagi belajar buat TKA.
+      Jangan terlalu dipikirin ya piiin, yang penting berusaha
+    </p>
+
+    <button onclick="bukaPesan()">
+      Buka pesan 💬
+    </button>
+
+    <div id="pesan">
+
+      <h2>Semangaaaaat pinaaaa! 💪</h2>
+
+      <p>
+        Aku tau kok TKA tu bikin capek, pusing, kadang juga
+        bikin kita pengen nyerah
+      </p>
+
+      <p>
+        Tapi kalau misal kamu capek
+        ngakpapa kok istirahat dulu
+      </p>
+
+      <p>
+        Yang penting kamu udah berusaha sebisa kamu,aku yakin kok kamu pasti bisa
+        
+      </p>
+     
+      <p>
+        Jadi sekarang fokus aja sama yang bisa kamu kerjain.
+        Satu materi, satu soal, pelan-pelan yang penting konsisten
+      </p>
+
+      <p>
+        Nggak harus sempurna kok SY. Yang penting kamu udah berusaha
+        sebaik yang kamu bisa.
+     </p>
+
+      <div class="quote">
+        Inget ya pin "Sesuatu yang menurut kamu baik belum tentu baik dan sesuatu yang menurut kamu buruk belum tentu buruk"
+      </div>
+
+      <p style="margin-top:20px; text-align:center;">
+        Semoga apa yang kamu cita-citakan tercapai 
+        <br>Good luck buat TKA-nya! 🍀
+      </p>
+
+    </div>
+
+    <div class="footer">
+      dibikin khusus buat nemenin SAFINA belajar :)
+    </div>
+
+    <div class="footer">
+      from : AQILA
+    </div>
+
+  </div>
+
+  <script>
+    function bukaPesan() {
+      const pesan = document.getElementById("pesan");
+
+      if (pesan.style.display === "block") {
+        pesan.style.display = "none";
+      } else {
+        pesan.style.display = "block";
+        pesan.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }
+    }
+  </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
